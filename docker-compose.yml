@@ -1,8 +1,8 @@
 version: '2'
 services:
   nginx:
-    image: shakyshane/nginx-cors-plus
+    image: plecerf/nginx-cors
     ports:
       - 8090:80
     environment:
-      - TARGET=example.com
+      - TARGET_HOST=https://example.com
