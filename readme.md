@@ -9,7 +9,7 @@ This is a fork of [shakyShane/nginx-cors-plus](https://github.com/shakyShane/ngi
 ## Docker Run
 
 ```bash
-docker run -p 8080:80 -e TARGET_HOST=https://example.com plecerf/nginx-cors
+docker run -p 8080:80 -e TARGET_HOST=https://example.com eledhwen/nginx-cors
 ```
 
 ## Docker Compose
@@ -18,7 +18,7 @@ docker run -p 8080:80 -e TARGET_HOST=https://example.com plecerf/nginx-cors
 version: '2'
 services:
   nginx:
-    image: shakyshane/nginx-cors
+    image: eledhwen/nginx-cors
     ports:
       - 8090:80
     environment:
